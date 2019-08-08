@@ -11,7 +11,6 @@ import SceneKit
 import ARKit
 
 // MARK: - Game State
-
 enum GameState: Int16 {
     case detectSurface  // Scan playable surface (Plane Detection On)
     case pointToSurface // Point to surface to see focus point (Plane Detection Off)
@@ -293,7 +292,6 @@ extension ViewController : ARSCNViewDelegate {
     }
     
     // MARK: - Plane Management
-    
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
         DispatchQueue.main.async {
