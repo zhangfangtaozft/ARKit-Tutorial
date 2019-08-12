@@ -6,7 +6,6 @@ ARKit 教程
 
 # 正文
 
-***
 * [ARKit教程01_目录](https://www.jianshu.com/p/ccbf76e88153)
 ***
 * [ARKit教程02_第一部分：开始ARKit](https://www.jianshu.com/p/93c27c4e5cf9)
