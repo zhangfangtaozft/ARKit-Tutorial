@@ -13,4 +13,5 @@ ARKit 教程
 * [ARKit教程05_第三章: Session Management基础](https://www.jianshu.com/p/4347a1b1febf)
 * [ARKit教程06_第四章：添加3D物体和纹理](https://www.jianshu.com/p/d36b2cb281fa)
 * [ARKit教程07_第五章：表面检测](https://www.jianshu.com/p/8dbb4580ff47)
+* [ARKit教程08_第六章：添加物理属性](https://www.jianshu.com/p/f7156238f43a)
 
