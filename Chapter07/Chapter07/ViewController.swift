@@ -38,7 +38,6 @@ class ViewController: UIViewController {
         messageLabel.text = "Move the phone around and allow the app to find a plane. You will see a yellow horizontal plane."
         sessionStateLabel.alpha = 0.0
         sessionStateLabel.text = ""
-        
     }
 }
 
