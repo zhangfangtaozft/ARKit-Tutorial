@@ -19,4 +19,4 @@ ARKit 教程
 * [ARKit教程09_第二部分：门户应用](https://www.jianshu.com/p/e202e985c68a)
 * [ARKit教程10_第七章：建立一个门户应用](https://www.jianshu.com/p/d9a081d3bbe7)
 * [ARKit教程11_第八章：在门户应用中添加物体](https://www.jianshu.com/p/c944830437a2)
-* [ARKit教程11_第八章：在门户应用中添加物体](https://www.jianshu.com/p/8d46ad78ffbd)
+* [ARKit教程12_第九章：几何，纹理和灯光](https://www.jianshu.com/p/8d46ad78ffbd)
