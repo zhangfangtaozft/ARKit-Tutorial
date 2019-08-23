@@ -7,7 +7,7 @@
 //
 
 import UIKit
-protocol BillboardViewDelegate: class{
+protocol BillboardViewDelegate: class {
     func billboardViewDidSelectPlayVideo(_ view: BillboardView)
 }
 class BillboardView: UIView {
@@ -15,9 +15,10 @@ class BillboardView: UIView {
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     weak var delegate: BillboardViewDelegate?
+    
     private var currentIndex: Int = 0
     
-    func showPreviousImage(){
+    func showPreviousImage() {
         let currentX = currentImageView.frame.origin.x
         let newIndex: Int = {
             var index = (self.currentIndex - 1) % self.images.count
@@ -26,38 +27,40 @@ class BillboardView: UIView {
             }
             return index
         }()
+        
         UIView.animate(withDuration: 0.2, animations: {
             self.currentImageView.frame.origin.x += self.bounds.width
-        }) { (finished) in
-            self.currentImageView.frame.origin.x += self.bounds.width
+        }, completion: { (finished) in
+            self.currentImageView.frame.origin.x = -self.currentImageView.frame.width
             self.showImage(at: newIndex)
             UIView.animate(withDuration: 0.5, animations: {
                 self.currentImageView.frame.origin.x = currentX
             })
-        }
+        })
     }
     
-    func showNextImage(){
+    func showNextImage() {
         let currentX = currentImageView.frame.origin.x
         let newIndex: Int = (currentIndex + 1) % images.count
+        
         UIView.animate(withDuration: 0.2, animations: {
             self.currentImageView.frame.origin.x -= self.bounds.width
-        }) { (finished) in
+        }, completion: { (finished) in
             self.currentImageView.frame.origin.x = self.currentImageView.frame.width + currentX
             self.showImage(at: newIndex)
             UIView.animate(withDuration: 0.5, animations: {
                 self.currentImageView.frame.origin.x = currentX
             })
-        }
+        })
     }
     
-    private func showImage(at index: Int){
+    private func showImage(at index: Int) {
         currentIndex = index
         currentImageView.image = images[currentIndex]
     }
     
-    var images: [UIImage]!{
-        didSet{
+    var images: [UIImage]! {
+        didSet {
             showImage(at: 0)
         }
     }
