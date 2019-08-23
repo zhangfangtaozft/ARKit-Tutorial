@@ -20,4 +20,7 @@ ARKit 教程
 * [ARKit教程10_第七章：建立一个门户应用](https://www.jianshu.com/p/d9a081d3bbe7)
 * [ARKit教程11_第八章：在门户应用中添加物体](https://www.jianshu.com/p/c944830437a2)
 * [ARKit教程12_第九章：几何，纹理和灯光](https://www.jianshu.com/p/8d46ad78ffbd)
+***
+* [ARKit教程13_第三部分：可交互的AR应用程序](https://www.jianshu.com/p/b6a38e4f5e1a)
 * [ARKit教程14_第十章：检测占位符](https://www.jianshu.com/p/5b799b3390ea)
+
