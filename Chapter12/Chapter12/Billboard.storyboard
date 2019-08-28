@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Gc-4D-Vjq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Billboard View Controller-->
+        <scene sceneID="2CW-Ek-aeD">
+            <objects>
+                <collectionViewController id="OU8-x6-ieK" customClass="BillboardViewController" customModule="RazeAd" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="h0P-8H-WFn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="y8w-IB-DmT">
+                            <size key="itemSize" width="375" height="375"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="cellImage" id="OR2-EN-oGB" customClass="ImageCell" customModule="RazeAd" customModuleProvider="target">
+                                <rect key="frame" x="750" y="0.0" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9IC-NX-3vP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="9IC-NX-3vP" firstAttribute="top" secondItem="OR2-EN-oGB" secondAttribute="top" id="3GT-Xv-QmD"/>
+                                    <constraint firstAttribute="trailing" secondItem="9IC-NX-3vP" secondAttribute="trailing" id="4GD-8P-by0"/>
+                                    <constraint firstItem="9IC-NX-3vP" firstAttribute="leading" secondItem="OR2-EN-oGB" secondAttribute="leading" id="Lgo-7u-2JN"/>
+                                    <constraint firstAttribute="bottom" secondItem="9IC-NX-3vP" secondAttribute="bottom" id="aca-pp-4Qt"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="9IC-NX-3vP" id="TMi-25-QBJ"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellVideo" id="fUi-9t-3cu" customClass="VideoCell" customModule="RazeAd" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwS-Hj-sfe">
+                                            <rect key="frame" x="0.0" y="315" width="375" height="60"/>
+                                            <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="UsI-Ie-DTi"/>
+                                            </constraints>
+                                            <state key="normal" image="arKit-play"/>
+                                            <connections>
+                                                <action selector="play" destination="fUi-9t-3cu" eventType="touchUpInside" id="Avf-qI-2f6"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arKit-border" translatesAutoresizingMaskIntoConstraints="NO" id="Ecj-zR-aag">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="315"/>
+                                        </imageView>
+                                        <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="oKk-dC-AaT">
+                                            <rect key="frame" x="26" y="10" width="323" height="287"/>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="Ecj-zR-aag" firstAttribute="leading" secondItem="fUi-9t-3cu" secondAttribute="leading" id="2Mq-ci-fms"/>
+                                    <constraint firstItem="oKk-dC-AaT" firstAttribute="top" secondItem="fUi-9t-3cu" secondAttribute="topMargin" constant="10" id="FGs-5X-kyE"/>
+                                    <constraint firstItem="Ecj-zR-aag" firstAttribute="top" secondItem="fUi-9t-3cu" secondAttribute="top" id="KBF-9w-deP"/>
+                                    <constraint firstItem="KwS-Hj-sfe" firstAttribute="leading" secondItem="fUi-9t-3cu" secondAttribute="leading" id="Kdn-AP-Y8L"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="oKk-dC-AaT" secondAttribute="trailing" constant="10" id="P2E-nX-DVi"/>
+                                    <constraint firstItem="oKk-dC-AaT" firstAttribute="leading" secondItem="fUi-9t-3cu" secondAttribute="leadingMargin" constant="10" id="brO-hu-b2a"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ecj-zR-aag" secondAttribute="trailing" id="gao-uv-Phr"/>
+                                    <constraint firstItem="KwS-Hj-sfe" firstAttribute="top" secondItem="oKk-dC-AaT" secondAttribute="bottom" constant="18" id="iAY-UK-Zvr"/>
+                                    <constraint firstAttribute="bottom" secondItem="KwS-Hj-sfe" secondAttribute="bottom" id="ndp-xP-MaX"/>
+                                    <constraint firstItem="KwS-Hj-sfe" firstAttribute="top" secondItem="Ecj-zR-aag" secondAttribute="bottom" id="spq-W1-7dd"/>
+                                    <constraint firstAttribute="trailing" secondItem="KwS-Hj-sfe" secondAttribute="trailing" id="xP7-dV-OdC"/>
+                                </constraints>
+                                <size key="customSize" width="375" height="375"/>
+                                <connections>
+                                    <outlet property="playButton" destination="KwS-Hj-sfe" id="U6n-9S-Olg"/>
+                                    <outlet property="playerContainer" destination="oKk-dC-AaT" id="6ox-56-kmK"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellWebBrowser" id="gCw-Jb-7XV" customClass="WebBrowserCell" customModule="RazeAd" customModuleProvider="target">
+                                <rect key="frame" x="375" y="0.0" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9e-w6-LfJ">
+                                            <rect key="frame" x="32" y="0.0" width="311" height="375"/>
+                                            <subviews>
+                                                <webView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="NbB-sQ-dj8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="375"/>
+                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </webView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="NbB-sQ-dj8" firstAttribute="leading" secondItem="B9e-w6-LfJ" secondAttribute="leading" id="08u-Hb-4pX"/>
+                                                <constraint firstItem="NbB-sQ-dj8" firstAttribute="top" secondItem="B9e-w6-LfJ" secondAttribute="top" id="PTJ-0x-owE"/>
+                                                <constraint firstAttribute="bottom" secondItem="NbB-sQ-dj8" secondAttribute="bottom" id="rqI-xm-zYT"/>
+                                                <constraint firstAttribute="trailing" secondItem="NbB-sQ-dj8" secondAttribute="trailing" id="tiS-zw-U63"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="B9e-w6-LfJ" firstAttribute="top" secondItem="gCw-Jb-7XV" secondAttribute="top" id="BDb-cU-0eh"/>
+                                    <constraint firstItem="B9e-w6-LfJ" firstAttribute="leading" secondItem="gCw-Jb-7XV" secondAttribute="leading" constant="32" id="bHy-wN-b5v"/>
+                                    <constraint firstAttribute="bottom" secondItem="B9e-w6-LfJ" secondAttribute="bottom" id="f49-z4-PA3"/>
+                                    <constraint firstAttribute="trailing" secondItem="B9e-w6-LfJ" secondAttribute="trailing" constant="32" id="r1o-Vc-6cm"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="webBrowser" destination="NbB-sQ-dj8" id="hW3-Er-ICv"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="OU8-x6-ieK" id="lCG-m4-121"/>
+                            <outlet property="delegate" destination="OU8-x6-ieK" id="r2i-fE-49Z"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="Oy5-GF-AbO"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="375"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vs7-ZJ-vTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1191" y="43"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GqY-Sc-JL0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Gc-4D-Vjq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <size key="freeformSize" width="375" height="375"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Us5-fG-E4r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OU8-x6-ieK" kind="relationship" relationship="rootViewController" id="mm4-H9-TCj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4c-gv-a7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="43"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arKit-border" width="600" height="600"/>
+        <image name="arKit-play" width="60" height="60"/>
+    </resources>
+</document>
