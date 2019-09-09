@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="Xcode">
+  <wpt lat="43.72281" lon="10.3958585">
+    <name>Lungarno, Pisa</name>
+    <time>2010-01-01T00:00:00Z</time>
+  </wpt>
+    <wpt lat="43.7153187" lon="10.4019739">
+        <name>Piazza dei Miracoli, Pisa</name>
+        <time>2010-01-01T00:00:30Z</time>
+    </wpt>
+    <wpt lat="43.72281" lon="10.3958585">
+      <name>Lungarno, Pisa</name>
+      <time>2010-01-01T00:01:00Z</time>
+    </wpt>
+</gpx>

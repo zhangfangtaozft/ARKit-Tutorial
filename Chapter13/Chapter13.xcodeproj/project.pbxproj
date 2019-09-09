@@ -7,21 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F85381E923225CC500AA591F /* BillboardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85381E823225CC500AA591F /* BillboardContainer.swift */; };
+		F85381EC23225E8D00AA591F /* BillboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85381EA23225E8D00AA591F /* BillboardViewController.swift */; };
 		F891510123162BD100774335 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891510023162BD100774335 /* AppDelegate.swift */; };
 		F891510523162BD100774335 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891510423162BD100774335 /* ViewController.swift */; };
-		F891510823162BD100774335 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F891510623162BD100774335 /* Main.storyboard */; };
 		F891510A23162BD200774335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F891510923162BD200774335 /* Assets.xcassets */; };
 		F891510D23162BD200774335 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F891510B23162BD200774335 /* LaunchScreen.storyboard */; };
+		F89772282325FD940071B26F /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89772272325FD940071B26F /* TargetView.swift */; };
+		F897722A2325FEB30071B26F /* UIViewController+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89772292325FEB30071B26F /* UIViewController+Notification.swift */; };
+		F897722C2325FF3F0071B26F /* WebBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F897722B2325FF3F0071B26F /* WebBrowserCell.swift */; };
+		F897722E2325FF870071B26F /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F897722D2325FF870071B26F /* VideoCell.swift */; };
+		F89772302325FFC90071B26F /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F897722F2325FFC90071B26F /* ImageCell.swift */; };
+		F8977232232600240071B26F /* TestLocations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F8977231232600240071B26F /* TestLocations.gpx */; };
+		F8977234232601060071B26F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8977233232601060071B26F /* Main.storyboard */; };
+		F897723623261D4F0071B26F /* Billboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F897723523261D4F0071B26F /* Billboard.storyboard */; };
+		F897723823261DDF0071B26F /* RectangularPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = F897723723261DDF0071B26F /* RectangularPlane.swift */; };
+		F897723A23261DF70071B26F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F897723923261DF70071B26F /* Constants.swift */; };
+		F8E924E42317A6CD002F1C35 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E924E32317A6CD002F1C35 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F85381E823225CC500AA591F /* BillboardContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardContainer.swift; sourceTree = "<group>"; };
+		F85381EA23225E8D00AA591F /* BillboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardViewController.swift; sourceTree = "<group>"; };
 		F89150FD23162BD100774335 /* Chapter13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapter13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F891510023162BD100774335 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F891510423162BD100774335 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F891510723162BD100774335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F891510923162BD200774335 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F891510C23162BD200774335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F891510E23162BD200774335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F89772272325FD940071B26F /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
+		F89772292325FEB30071B26F /* UIViewController+Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Notification.swift"; sourceTree = "<group>"; };
+		F897722B2325FF3F0071B26F /* WebBrowserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBrowserCell.swift; sourceTree = "<group>"; };
+		F897722D2325FF870071B26F /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		F897722F2325FFC90071B26F /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		F8977231232600240071B26F /* TestLocations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestLocations.gpx; sourceTree = "<group>"; };
+		F8977233232601060071B26F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F897723523261D4F0071B26F /* Billboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Billboard.storyboard; sourceTree = "<group>"; };
+		F897723723261DDF0071B26F /* RectangularPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularPlane.swift; sourceTree = "<group>"; };
+		F897723923261DF70071B26F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F8E924E32317A6CD002F1C35 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +78,21 @@
 		F89150FF23162BD100774335 /* Chapter13 */ = {
 			isa = PBXGroup;
 			children = (
+				F8977231232600240071B26F /* TestLocations.gpx */,
 				F891510023162BD100774335 /* AppDelegate.swift */,
+				F8E924E32317A6CD002F1C35 /* LocationManager.swift */,
+				F85381E823225CC500AA591F /* BillboardContainer.swift */,
+				F85381EA23225E8D00AA591F /* BillboardViewController.swift */,
+				F897723523261D4F0071B26F /* Billboard.storyboard */,
 				F891510423162BD100774335 /* ViewController.swift */,
-				F891510623162BD100774335 /* Main.storyboard */,
+				F89772272325FD940071B26F /* TargetView.swift */,
+				F897723723261DDF0071B26F /* RectangularPlane.swift */,
+				F897723923261DF70071B26F /* Constants.swift */,
+				F89772292325FEB30071B26F /* UIViewController+Notification.swift */,
+				F897722B2325FF3F0071B26F /* WebBrowserCell.swift */,
+				F897722D2325FF870071B26F /* VideoCell.swift */,
+				F897722F2325FFC90071B26F /* ImageCell.swift */,
+				F8977233232601060071B26F /* Main.storyboard */,
 				F891510923162BD200774335 /* Assets.xcassets */,
 				F891510B23162BD200774335 /* LaunchScreen.storyboard */,
 				F891510E23162BD200774335 /* Info.plist */,
@@ -123,8 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F891510D23162BD200774335 /* LaunchScreen.storyboard in Resources */,
+				F8977234232601060071B26F /* Main.storyboard in Resources */,
 				F891510A23162BD200774335 /* Assets.xcassets in Resources */,
-				F891510823162BD100774335 /* Main.storyboard in Resources */,
+				F8977232232600240071B26F /* TestLocations.gpx in Resources */,
+				F897723623261D4F0071B26F /* Billboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +173,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F897723823261DDF0071B26F /* RectangularPlane.swift in Sources */,
 				F891510523162BD100774335 /* ViewController.swift in Sources */,
+				F897722C2325FF3F0071B26F /* WebBrowserCell.swift in Sources */,
+				F897722E2325FF870071B26F /* VideoCell.swift in Sources */,
+				F897722A2325FEB30071B26F /* UIViewController+Notification.swift in Sources */,
+				F85381E923225CC500AA591F /* BillboardContainer.swift in Sources */,
+				F85381EC23225E8D00AA591F /* BillboardViewController.swift in Sources */,
 				F891510123162BD100774335 /* AppDelegate.swift in Sources */,
+				F8E924E42317A6CD002F1C35 /* LocationManager.swift in Sources */,
+				F89772282325FD940071B26F /* TargetView.swift in Sources */,
+				F89772302325FFC90071B26F /* ImageCell.swift in Sources */,
+				F897723A23261DF70071B26F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F891510623162BD100774335 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F891510723162BD100774335 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F891510B23162BD200774335 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -213,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -291,7 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Frank.Chapter13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -309,7 +349,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Frank.Chapter13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
